@@ -1,0 +1,22 @@
+enabled: true
+worldborder: 1000
+spectatorspawn: -10/72/-196/world
+version: 1.5.7
+lives:
+  90cec013-c3da-4bfa-a6e2-5c4d1e666ea4: '5'
+  3edc9479-4bef-48c8-b753-f587db235ec5: '4'
+  5728b760-b7c2-481d-9b10-b87c22f239d8: '5'
+  1fe1f95c-3415-4ada-87d8-f1da23b9b5bf: '5'
+  95fd0a3f-4ecd-4b47-8d26-dc74955e51c2: '5'
+  385548fb-a1b3-4858-9f29-de0956a67669: '5'
+  1fd5d9ae-6fd1-4baf-944f-ecf05aa9c80e: '5'
+  6d26dccf-3275-4b15-8775-98127e318a75: '5'
+  fb7f14d0-ca77-4e65-90e9-5933d127beef: '5'
+  a2e187fc-6b0b-4abf-8c66-0e79c90867e5: '5'
+  070108f2-e88d-479e-9157-53b876a66c12: '5'
+  640d0899-4128-42a9-ad30-78e1a00bb190: '4'
+  9def8ff8-1e46-43cf-90ed-385e2c94170b: '5'
+  940f06a7-be07-4024-8786-c1638f948efb: '5'
+  f925e43c-009f-4fce-9a51-faf22112affa: '5'
+firstlife:
+- 9def8ff8-1e46-43cf-90ed-385e2c94170b

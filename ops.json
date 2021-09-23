@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "5728b760-b7c2-481d-9b10-b87c22f239d8",
+    "name": "iiiAlphabet",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "90cec013-c3da-4bfa-a6e2-5c4d1e666ea4",
+    "name": "OMEN44",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "385548fb-a1b3-4858-9f29-de0956a67669",
+    "name": "Necromancer01",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

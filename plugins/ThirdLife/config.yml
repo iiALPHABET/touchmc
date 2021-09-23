@@ -1,0 +1,65 @@
+# ___  _    _         _     _    _  ___      
+#|_ _|| |_ <_> _ _  _| |   | |  <_>| | ' ___ 
+# | | | . || || '_>/ . |   | |_ | || |- / ._>
+# |_| |_|_||_||_|  \___|   |___||_||_|  \___.
+
+#Welcome to the 3rd Life config!
+
+#Notes:
+#  placeholders:
+#    - %thirdlife_player% returns the player name in the color of their life
+#    - %thirdlife_color% returns the color of the life a player is on
+#    - %thirdlife_message% only works in the format_chat.format section and returns the players message
+#    - %thirdlife_life% returns a bracketed number that corresponds to the life a person is on.
+#      this will return null if "max_extra_lives" is set to 0.
+
+#control the max allowed lives and the color for players with more then three lives.
+#For instance, setting "max_extra_lives" to 2 would set the max lives to 5 (do not set it to negative numbers).
+extra_lives:
+  max_extra_lives: 2
+  extra_lives_color: '&6'
+  
+#display a title to players who dies on there second life telling them their new goal
+display_title:
+  enable_title: true
+  title: '&cYou are now a Killer'
+  sub_title: '&7kill &c&leveryone &7who is not also a &ckiller'
+
+#Formats all player chats. Only set this to false if it is interfering with another plugin
+#or you wish another plugin to format chat instead.
+format_chat:
+  enable: true
+  format: '&f<%thirdlife_player% %thirdlife_life%&f> %thirdlife_message%'
+
+#This option allows you to change the gamemode players are put in when they lose their last life.
+#You have 4 options for gamemodes "SPECTATOR", "ADVENTURE", "CREATIVE", "SURVIVAL". The default option
+#is spectator and if you put an invalid gamemode in it will deafult to it.
+on_final_death:
+  set_gamemode: "SPECTATOR"
+#Final spawn is exactly what is sounds like. If you set this to true a command and option in the GUI will
+#be made available allowing you to set where players spawn after losing all their lives (default location is world spawn).
+  enable_spectator_spawn: false
+
+#Add commands to this list that you don't want players with no lives using. Set this to "*" to disable all commands for player with no lives.
+blacklisted_commands: "*"
+
+#Worlds in this list will not be affected by the hardcore life system (so Killing/Dying in these worlds will have no affect on your life count).
+blacklisted_worlds: ""
+ 
+#Stop players with more then one life from hitting each other.
+#Also stops players on their third life from hitting each other.
+team_protect: false
+
+#If this is set to true killers will gain a life when they kill a player with more then one life 
+#(this might make the games go on for a while)
+gain_life_on_kill: true
+
+#Set this to false if you want first life and second life players to be able to kill
+#third life players and kill them permanently (Only deaths caused by the environment would kill third life players permanently)
+final_kill_third_life: true
+
+#This allows players, regardless of how many lives they have, to kill other players and take their lives. However, you can only get up to
+#the max number of allowed lives. This will override "team_protect", "gain_life_on_kill" and "display_title".
+free_for_all: false
+
+
